@@ -40,7 +40,7 @@ Sample ID for album = "64b42c3e89cbed7533518f4f"
   "title": "work of art",
   "genre": "Afrobeat",
   "releaseYear": 2023,
-  "artistId": 64b42c3e89cbed7533518f4f
+  "artistId": "64b42c3e89cbed7533518f4f"
 }
 
 
