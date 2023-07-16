@@ -1,7 +1,7 @@
 ﻿# Music-Streaming-API
 
 ```json
-create an Artist (localhost:6500/api/artists) - `POST`
+#create an Artist (localhost:6500/api/artists) - `POST`
 using form-data
 name(key) wizkid(value)
 genre(key) Afrobeat(value)
@@ -24,7 +24,7 @@ Delete an artist - `Delete (localhost:6500/api/artists/:id)
 
 
 
-create an Album (localhost:6500/api/albums) - `POST`
+#create an Album (localhost:6500/api/albums) - `POST`
 using form-data
 title(key) more love, less ego(value)
 genre(key) Afrobeat(value)
