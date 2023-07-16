@@ -1,9 +1,7 @@
 ﻿# Music-Streaming-API
 
-
-
-create an Artist (localhost:6500/api/artists) - `POST`
 ```json
+create an Artist (localhost:6500/api/artists) - `POST`
 using form-data
 name(key) wizkid(value)
 genre(key) Afrobeat(value)
