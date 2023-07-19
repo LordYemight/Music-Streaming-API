@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const moment = require('moment-timezone');
-
+const Artist = require('../models/artistSchema');
 
 const albumSchema = new mongoose.Schema({
   title: {
@@ -17,10 +17,14 @@ const albumSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  artistId: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Artist',
-    required: true,
+  artist: {
+    id: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Artist'
+    },
+    name: {
+      type: String
+    },
   },
   albumCoverURL: {
     type: String,
@@ -30,7 +34,9 @@ const albumSchema = new mongoose.Schema({
     type: Date,
     default: moment().tz('Your_Timezone').add(1, 'hours').toDate(),
   }
-});
+})
+
+
 
 const Album = mongoose.model('Album', albumSchema);
 

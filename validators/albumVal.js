@@ -5,6 +5,7 @@ const albumSchema = Joi.object({
   releaseYear: Joi.number().integer().min(1900).max(new Date().getFullYear()).required(),
   genre: Joi.string().required(),
   artistId: Joi.string().required(),
+  albumCoverURL: Joi.string().optional()
 });
 
 module.exports = albumSchema;
