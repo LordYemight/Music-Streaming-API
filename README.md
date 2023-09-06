@@ -29,7 +29,7 @@ Some of the technologies used in the development of this web application are as 
 - Node.js: A runtime environment to help build fast server applications using JS.
 - Express.js: A popular Node.js framework to build scalable server-side for web applications.
 - Mongoose: An ODM(Object Data Modelling)library for MongoDB and Node.js
-- Nodemailer: A powerful library for sending emails from your Node.js applications. After an artist uploads an album, an email is sent to the artist which entails the ablbum tracks and cover.
+- Nodemailer: A powerful library for sending emails from your Node.js applications. After an artist uploads an album, email is sent to the artist which says "Congratulations! Your new album "${title}" has been added.".
 - Multer:  It is use for handling file uploads. 
 - Dotenv: This library is used for managing environment variables in your Node.js applications. It stores sensitive or configuration-related information (such as API keys, database URLs, or secret keys) in a separate `.env` file. This helps keep the application's configuration secure and separate from your codebase.
 - Joi: Joi is a validation library for JavaScript applications, particularly useful in the context of APIs and form validation. 
