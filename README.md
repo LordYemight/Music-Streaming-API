@@ -1,14 +1,27 @@
 ﻿# Music-Streaming-API
 
-Getting Started
-Fork this repo and run the git clone <forked repo> command from your terminal/bash
-Cd into the directories and npm install
+## Prerequisites
+
+Before you begin, make sure you have the following prerequisites installed on your machine:
+
+- Node.js: [Download and Install Node.js](https://nodejs.org/)
+- Git: [Download and Install Git](https://git-scm.com/)
+
+## Installation
+Clone the repository into your local directory:
+   ```bash
+   git clone <repo-url>
+cd <project-directory>
+npm install
+
 Create a .env file in the root directory and store the following:
-MONGO_URI=Insert the correct connection URL for your MongoDB database
+MONGODB_URI=Insert the correct connection URL for your MongoDB database
+port=3000  # Replace with your desired port number
+email_user=User's email.
+email_host=Sender or host email address
+password=Sender or host password
+service=Email services provider e.g yahoo, gmail, etc.
 
-
-npm start/yarn start
-You can obtain the MONGO_URI after create a collectoin on mongodb atlas. For the GOOGLE_CLIENT_ID and the TWITTER_CONSUMER_SECRET/ID, you will need to go through the Google developer console and the Twitter developer accounts page respectively
 
 ```json
 Create an Artist (localhost:6500/api/artists) - `POST`
