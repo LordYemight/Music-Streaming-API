@@ -22,7 +22,7 @@ email_host=Sender or host email address
 password=Sender or host password
 service=Email services provider e.g yahoo, gmail, etc.
 
-
+```bash
 ```json
 Create an Artist (localhost:6500/api/artists) - `POST`
 
