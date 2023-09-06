@@ -47,16 +47,16 @@ const album = async (req, res) => {
 
     // },{})
     const transporter = nodemailer.createTransport({
-      service: "yahoo",
+      service: process.env.service,
       auth: {
-        user: "yemightzi@yahoo.com",
+        user: process.env.email_host,
         pass: process.env.password,
       },
     });
 
     const mailOptions = {
-      from: "yemightzi@yahoo.com",
-      to: "lordyemight@gmail.com",
+      from: process.env.email_host,
+      to: process.env.email_user,
       subject: "New Album Notification",
       text: `Congratulations! Your new album "${title}" has been added.`,
     };
